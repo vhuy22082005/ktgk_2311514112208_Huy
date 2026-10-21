@@ -1,19 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
 
     <TextView
+        android:id="@+id/khoanchi_108"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Quản lý khoản chi"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tenkhoachi_108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khoản chi: "
+        android:textStyle="bold">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </TextView>
+    <EditText
+        android:id="@+id/edttenkhoanchi_108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên khoản chi"
+        android:minHeight="48dp"
+        android:layout_marginTop="12dp"
+        android:inputType="text"/>
+    <TextView
+        android:id="@+id/sotien_108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số tiền: "
+        android:textStyle="bold">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edtsotien_108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền"
+        android:minHeight="48dp"
+        android:layout_marginTop="12dp"
+        android:inputType="text">
+
+    </EditText>
+    <TextView
+        android:id="@+id/ghichu_108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú: "
+        android:textStyle="bold">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edtghichu_108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ghi chú"
+        android:minHeight="48dp"
+        android:layout_marginTop="12dp"
+        android:inputType="text">
+
+    </EditText>
+    <Button
+        android:id="@+id/btnthem_108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm khoản chi"
+        android:backgroundTint="#FF9800">
+
+    </Button>
+    <Button
+        android:id="@+id/btnxemchitiet_108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem chi tiết"
+        android:backgroundTint="#000">
+
+    </Button>
+
+
+</LinearLayout>
