@@ -1,5 +1,6 @@
 package com.example.ktgk_2311514112208_huy
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -25,6 +26,20 @@ class MainActivity : AppCompatActivity() {
             else
                 Toast.makeText(this, "Da them khoan chi", Toast.LENGTH_SHORT).show()
 
+        }
+
+        b.btnxemchitiet108.setOnClickListener {
+            val ten = b.khoanchi108.text.toString().trim()
+            val tien = b.sotien108.text.toString().trim()
+            val ghichu = b.ghichu108.text.toString().trim()
+
+            if(ten.isEmpty()) Toast.makeText(this, "Vui long nhap ten khoan chi", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, DetailActivity::class.java).apply {
+                putExtra("Ten",ten)
+                putExtra("Tien",tien)
+                putExtra("ghichu",ghichu)
+            }
         }
     }
 }
