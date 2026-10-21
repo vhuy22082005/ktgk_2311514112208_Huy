@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/khoanchi_108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý khoản chi"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txttenkhoachi_108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khoản chi: "
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtsotien_108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số tiền: "
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtghichu_108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú: "
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnedit_108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa"
+        android:backgroundTint="#FF9800">
+
+    </Button>
+    <Button
+        android:id="@+id/btnback_108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        android:backgroundTint="#000">
+
+    </Button>
+
+
+</LinearLayout>
